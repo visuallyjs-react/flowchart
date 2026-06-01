@@ -1,0 +1,291 @@
+{
+  "nodes": [
+    {
+      "id": "2",
+      "type": "decision",
+      "label": "Is it in the public domain?",
+      "x": -250,
+      "y": -500,
+      "width": 200,
+      "height": 200,
+      "fill": "#ffffff",
+      "outline": "#3196aa",
+      "color": "#3196aa",
+      "outlineWidth": 2
+    },
+    {
+      "id": "3",
+      "type": "decision",
+      "label": "Is it Creative Commons?",
+      "x": 150,
+      "y": -650,
+      "width": 200,
+      "height": 200,
+      "fill": "#ffffff",
+      "outline": "#3196aa",
+      "color": "#3196aa",
+      "outlineWidth": 2
+    },
+    {
+      "id": "4",
+      "type": "decision",
+      "label": "Is it available from the publisher?",
+      "x": 600,
+      "y": -650,
+      "width": 200,
+      "height": 200,
+      "fill": "#ffffff",
+      "outline": "#3196aa",
+      "color": "#3196aa",
+      "outlineWidth": 2
+    },
+    {
+      "id": "5",
+      "type": "decision",
+      "label": "Can it be linked online?",
+      "x": 600,
+      "y": -350,
+      "width": 200,
+      "height": 200,
+      "fill": "#ffffff",
+      "outline": "#3196aa",
+      "color": "#3196aa",
+      "outlineWidth": 2
+    },
+    {
+      "id": "6",
+      "type": "process",
+      "label": "Provide link to material",
+      "x": 350,
+      "y": -300,
+      "width": 150,
+      "height": 100,
+      "fill": "#ffffff",
+      "outline": "#3196aa",
+      "color": "#3196aa",
+      "outlineWidth": 2
+    },
+    {
+      "id": "7",
+      "type": "process",
+      "label": "Send request to IPO for usage permission",
+      "x": 600,
+      "y": -50,
+      "width": 200,
+      "height": 100,
+      "fill": "#ffffff",
+      "outline": "#3196aa",
+      "color": "#3196aa",
+      "outlineWidth": 2
+    },
+    {
+      "id": "8",
+      "type": "process",
+      "label": "Review license and comply with terms",
+      "x": 50,
+      "y": -150,
+      "width": 200,
+      "height": 100,
+      "fill": "#ffffff",
+      "outline": "#3196aa",
+      "color": "#3196aa",
+      "outlineWidth": 2
+    },
+    {
+      "id": "9",
+      "type": "decision",
+      "label": "Can IPO identify the rights holder?",
+      "x": 250,
+      "y": 150,
+      "width": 200,
+      "height": 150,
+      "fill": "#ffffff",
+      "outline": "#3196aa",
+      "color": "#3196aa",
+      "outlineWidth": 2
+    },
+    {
+      "id": "10",
+      "type": "terminus",
+      "label": "Copyright cleared",
+      "outlineWidth": 2,
+      "x": -250,
+      "y": 50,
+      "width": 200,
+      "height": 100,
+      "fill": "#ffffff",
+      "outline": "#0da518",
+      "color": "#0da518"
+    },
+    {
+      "x": 1050,
+      "y": -300,
+      "fill": "#ffffff",
+      "outline": "#bb5454",
+      "color": "#bb5454",
+      "outlineWidth": 2,
+      "type": "terminus",
+      "category": "flowchart",
+      "width": 200,
+      "height": 100,
+      "id": "ce9ef1fc-96fa-4b92-a670-f45d21737b5e",
+      "label": "Copyright Not Cleared"
+    },
+    {
+      "x": -250,
+      "y": -750,
+      "fill": "#ffffff",
+      "outline": "#3196aa",
+      "color": "#3196aa",
+      "outlineWidth": 2,
+      "type": "terminus",
+      "category": "flowchart",
+      "width": 200,
+      "height": 100,
+      "id": "c4529372-e187-459d-b1ab-f756b373b511",
+      "label": "Select Material"
+    }
+  ],
+  "edges": [
+    {
+      "source": "2",
+      "target": "10",
+      "data": {
+        "label": "YES",
+        "color": "#000000",
+        "markers": "targetArrow",
+        "lineWidth": 2
+      }
+    },
+    {
+      "source": "2",
+      "target": "3",
+      "data": {
+        "label": "NO",
+        "color": "#000000",
+        "markers": "targetArrow",
+        "lineWidth": 2
+      }
+    },
+    {
+      "source": "3",
+      "target": "4",
+      "data": {
+        "label": "NO",
+        "color": "#000000",
+        "markers": "targetArrow",
+        "lineWidth": 2
+      }
+    },
+    {
+      "source": "3",
+      "target": "8",
+      "data": {
+        "label": "YES",
+        "color": "#000000",
+        "markers": "targetArrow",
+        "lineWidth": 2
+      }
+    },
+    {
+      "source": "4",
+      "target": "ce9ef1fc-96fa-4b92-a670-f45d21737b5e",
+      "data": {
+        "label": "NO",
+        "color": "#000000",
+        "markers": "targetArrow",
+        "lineWidth": 2
+      }
+    },
+    {
+      "source": "4",
+      "target": "5",
+      "data": {
+        "label": "YES",
+        "color": "#000000",
+        "markers": "targetArrow",
+        "lineWidth": 2
+      }
+    },
+    {
+      "source": "5",
+      "target": "6",
+      "data": {
+        "label": "YES",
+        "color": "#000000",
+        "markers": "targetArrow",
+        "lineWidth": 2
+      }
+    },
+    {
+      "source": "5",
+      "target": "7",
+      "data": {
+        "label": "NO",
+        "color": "#000000",
+        "markers": "targetArrow",
+        "lineWidth": 2
+      }
+    },
+    {
+      "source": "6",
+      "target": "8",
+      "data": {
+        "label": "",
+        "color": "#000000",
+        "markers": "targetArrow",
+        "lineWidth": 2
+      }
+    },
+    {
+      "source": "7",
+      "target": "9",
+      "data": {
+        "label": "",
+        "color": "#000000",
+        "markers": "targetArrow",
+        "lineWidth": 2
+      }
+    },
+    {
+      "source": "8",
+      "target": "10",
+      "data": {
+        "label": "",
+        "color": "#000000",
+        "markers": "targetArrow",
+        "lineWidth": 2
+      }
+    },
+    {
+      "source": "9",
+      "target": "ce9ef1fc-96fa-4b92-a670-f45d21737b5e",
+      "data": {
+        "label": "NO",
+        "color": "#000000",
+        "markers": "targetArrow",
+        "lineWidth": 2
+      }
+    },
+    {
+      "source": "9",
+      "target": "10",
+      "data": {
+        "label": "YES",
+        "color": "#000000",
+        "markers": "targetArrow",
+        "lineWidth": 2
+      }
+    },
+    {
+      "source": "c4529372-e187-459d-b1ab-f756b373b511",
+      "target": "2",
+      "data": {
+        "label": "",
+        "color": "#000000",
+        "markers": "targetArrow",
+        "lineWidth": 2
+      }
+    }
+  ]
+}
