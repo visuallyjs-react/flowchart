@@ -7,12 +7,16 @@
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background-color: #f8f9fa;
     color: #333;
+    flex-direction: row-reverse;
 }
 
 .vjs-flowchart-canvas {
     flex-grow: 1;
     position: relative;
     background-color: #fcfcfc;
+
+    min-width: 60vw;
+    height: 80vh;
 }
 
 .vjs-flowchart-palette {
@@ -193,3 +197,5 @@
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }
+
+

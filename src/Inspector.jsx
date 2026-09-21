@@ -1,16 +1,16 @@
 
-import { EdgeTypePickerComponent, InspectorComponent, ColorPickerComponent } from "@visuallyjs/browser-ui-react"
-import { Node, Edge } from "@visuallyjs/browser-ui"
+import {InspectorComponent, ColorPickerComponent, EdgePropertyMappingsInspector} from "@visuallyjs/browser-ui-react"
+import {Node, Edge} from "@visuallyjs/browser-ui"
 import {
     LINE_WIDTHS,
     PROPERTY_COLOR,
     PROPERTY_FILL,
-    PROPERTY_LABEL, PROPERTY_LINE_STYLE, PROPERTY_LINE_WIDTH, PROPERTY_MARKERS,
+    PROPERTY_LABEL,
     PROPERTY_OUTLINE,
     PROPERTY_OUTLINE_WIDTH, PROPERTY_TEXT
 } from "./constants.ts";
 
-export default function FlowchartInspector() {
+export default function FlowchartInspector(props) {
 
     return <InspectorComponent className="vjs-flowchart-inspector">
         {(current) => <>
@@ -62,20 +62,9 @@ export default function FlowchartInspector() {
                     <div>Label</div>
                     <input type="text" vjs-att={PROPERTY_LABEL}/>
                 </div>
-                <div className="vjs-inspector-section">
-                    <div>Line style</div>
-                    <EdgeTypePickerComponent propertyName={PROPERTY_LINE_STYLE}/>
-                </div>
-                <div className="vjs-inspector-section">
-                    <div>Markers</div>
-                    <EdgeTypePickerComponent propertyName={PROPERTY_MARKERS}/>
-                </div>
-                <div className="vjs-inspector-section">
-                    <div>Line width</div>
-                    <select vjs-att={PROPERTY_LINE_WIDTH} vjs-datatype="integer">
-                        {LINE_WIDTHS.map (lw => <option key={lw} value={lw}>{lw}</option>)}
-                    </select>
-                </div>
+
+                <EdgePropertyMappingsInspector/>
+
             </>
             }
 

@@ -154,7 +154,7 @@
         "label": "YES",
         "color": "#000000",
         "markers": "targetArrow",
-        "lineWidth": 2
+        "thickness":"medium"
       }
     },
     {
@@ -164,7 +164,7 @@
         "label": "NO",
         "color": "#000000",
         "markers": "targetArrow",
-        "lineWidth": 2
+        "thickness":"medium"
       }
     },
     {
@@ -174,7 +174,7 @@
         "label": "NO",
         "color": "#000000",
         "markers": "targetArrow",
-        "lineWidth": 2
+        "thickness":"medium"
       }
     },
     {
@@ -184,7 +184,7 @@
         "label": "YES",
         "color": "#000000",
         "markers": "targetArrow",
-        "lineWidth": 2
+        "thickness":"medium"
       }
     },
     {
@@ -194,7 +194,7 @@
         "label": "NO",
         "color": "#000000",
         "markers": "targetArrow",
-        "lineWidth": 2
+        "thickness":"medium"
       }
     },
     {
@@ -204,7 +204,7 @@
         "label": "YES",
         "color": "#000000",
         "markers": "targetArrow",
-        "lineWidth": 2
+        "thickness":"medium"
       }
     },
     {
@@ -214,7 +214,7 @@
         "label": "YES",
         "color": "#000000",
         "markers": "targetArrow",
-        "lineWidth": 2
+        "thickness":"medium"
       }
     },
     {
@@ -224,7 +224,7 @@
         "label": "NO",
         "color": "#000000",
         "markers": "targetArrow",
-        "lineWidth": 2
+        "thickness":"medium"
       }
     },
     {
@@ -234,7 +234,7 @@
         "label": "",
         "color": "#000000",
         "markers": "targetArrow",
-        "lineWidth": 2
+        "thickness":"medium"
       }
     },
     {
@@ -244,7 +244,7 @@
         "label": "",
         "color": "#000000",
         "markers": "targetArrow",
-        "lineWidth": 2
+        "thickness":"medium"
       }
     },
     {
@@ -254,7 +254,7 @@
         "label": "",
         "color": "#000000",
         "markers": "targetArrow",
-        "lineWidth": 2
+        "thickness":"medium"
       }
     },
     {
@@ -264,7 +264,7 @@
         "label": "NO",
         "color": "#000000",
         "markers": "targetArrow",
-        "lineWidth": 2
+        "thickness":"medium"
       }
     },
     {
@@ -274,7 +274,7 @@
         "label": "YES",
         "color": "#000000",
         "markers": "targetArrow",
-        "lineWidth": 2
+        "thickness":"medium"
       }
     },
     {
@@ -284,7 +284,7 @@
         "label": "",
         "color": "#000000",
         "markers": "targetArrow",
-        "lineWidth": 2
+        "thickness":"medium"
       }
     }
   ]
