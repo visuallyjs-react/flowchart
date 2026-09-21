@@ -14,9 +14,6 @@
     flex-grow: 1;
     position: relative;
     background-color: #fcfcfc;
-
-    min-width: 60vw;
-    height: 80vh;
 }
 
 .vjs-flowchart-palette {
